@@ -1,4 +1,4 @@
-import matplotlib
+import matplotlib as plt
 
 import numpy as np
 import pandas as pd
@@ -31,7 +31,10 @@ print(df["Hired"][:5]) #used to extract the first five rows from
 
 print(df["Hired"][5]) #used to extract an exact value
 
+degree_counts= df['Level of Education'].value_counts()
 #to print the number of unique data values in a df
-print( df['Level of Education'].value_counts())
+print(degree_counts)
+
+degree_counts.plot(kind='bar')
 
 
