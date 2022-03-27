@@ -27,7 +27,9 @@ plt.plot(x, binom.pmf(x,n,p))
 plt.show()
 
 #poisson (PMF)
-
+#useful when determining the probability of getting some values
+#when one knows the average values that is expected from the previous 
+#experience.
 mu= 500
 x= np.arange(400, 600, 0.5)
 plt.plot(x, poisson.pmf(x,mu))
