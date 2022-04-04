@@ -60,5 +60,17 @@ plt.pie(values,colors= colors, labels= labels, explode=explode)
 plt.title("Student Location")
 plt.show()
 
+#creating a bar chart
+values=[12, 55, 4, 32, 14]
+colors= ["r",'g', 'b', 'c', 'm']
+plt.bar(range(0,5), values, color= colors)
+plt.show()
+
+#scatter plot
+X= np.random.randomInt(500, size=200)
+Y=  np.random.randomInts(500, size=200)
+plt.scatter(X,Y)
+plt.show()
+
 
 
