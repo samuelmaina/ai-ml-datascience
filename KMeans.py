@@ -20,4 +20,16 @@ def createClusteredData(N, k):
             X.append([random.normal(incomeCentroid, 10000.0), random.normal(ageCentroid,2.0)])
     X=np.array(X)
     return X
+
+data= createClusteredData(100,5)
+model= KMeans(n_clusters=4)
+
+#scaling is required to normalize the data and to ensure good results.
+model= model.fit(scale(data))
+print(model.labels_)
+
+
+plt.figure(figsize=(0,6))
+plt.scatter(data[:,0], data[:,1], c=model.labels_.astype(np.float64))
+plt.show()
             
