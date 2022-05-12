@@ -39,13 +39,25 @@ x= df[features]
 classifier=tree.DecisionTreeClassifier()
 classifier= classifier.fit(x,y)
 #TODOs check on how to generate the decision tree image.
-print(classifier)
+print("predictions ", classifier.predict([[10,1,4,0,0,0],[10,0,4,0,0,0]]))
+
+
 
 
 #to prevent overfiting Random forest are used to make the decision.
 #The forest consists of many trees in which each acts on random sample of the 
 #data . On the overall decision each tree makes a vote  which will contribute
 #to overall decisions
+
+classifier= RandomForestClassifier(n_estimators=10)
+classifier= classifier.fit(x,y)
+
+print("forest predictions",classifier.predict([[10,1,4,0,0,0],[10,0,4,0,0,0]]))
+
+
+
+
+
 
 
 
