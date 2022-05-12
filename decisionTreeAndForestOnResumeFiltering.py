@@ -1,5 +1,8 @@
 import numpy as np
 import pandas as pd
+
+
+#used to reduce entropy down the decision. Entropy is how uniform or related elements in a dataset are.
 from sklearn import tree
 from sklearn.ensemble import RandomForestClassifier
 import matplotlib.pyplot as plt
