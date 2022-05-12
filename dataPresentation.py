@@ -67,7 +67,7 @@ plt.bar(range(0,5), values, color= colors)
 plt.show()
 
 #scatter plot
-X= np.random.randomInt(500, size=200)
+X= np.random.randomInts(500, size=200)
 Y=  np.random.randomInts(500, size=200)
 plt.scatter(X,Y)
 plt.show()
