@@ -16,7 +16,7 @@ plt.show()
 #split the data into 80% as testing data and 20% of the testing
 #data.
 
-#Data is shuffled in the real world, not going
+#Data is shuffled in git cthe real world, not going
 trainX= pageSpeeds[:80]
 testX= pageSpeeds[80:]
 
